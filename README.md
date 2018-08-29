@@ -85,8 +85,6 @@ $ polymer init
 
 Provide by [iron-demo-helpers](https://github.com/PolymerElements/iron-demo-helpers).
 
-![UI docs demo](img/ui-docs-demo.gif)
-
 ## Development
 
 #### Run the project locally

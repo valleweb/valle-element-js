@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "valleweb",
+      "authorEmail": "larissa.a.abreu@hotmail.com",
+      "authorUrl": "https://github.com/valleweb/"
+    }
+  }
+}

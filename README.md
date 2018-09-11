@@ -2,8 +2,8 @@
 
 > A generator for valle-elements - web components with Polymer 3
 
-[![NPM version][npm-image]][npm-url]
-[![Dependency Status][daviddm-image]][daviddm-url]
+[![npm](https://img.shields.io/npm/v/@valle/generator-valle-element-js.svg)](https://www.npmjs.com/package/@valle/generator-valle-element-js)
+[![dependencies Status](https://david-dm.org/valleweb/valle-element-js/status.svg)](https://david-dm.org/valleweb/valle-element-js)
 
 ## Table of contents
 

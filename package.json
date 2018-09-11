@@ -1,8 +1,8 @@
 {
-  "name": "generator-polymer-init-valle-element-js",
+  "name": "@valle/valle-element-js",
   "version": "0.1.0",
   "description": "A generator for valle-elements - web components with Polymer 3",
-  "homepage": "https://github.com/valleweb/generator-polymer-init-valle-element-js",
+  "homepage": "https://github.com/valleweb/valle-element-js",
   "author": {
     "name": "valleweb",
     "url": "https://github.com/valleweb/"
@@ -17,6 +17,7 @@
     "valle",
     "yeoman-generator"
   ],
+  "preferGlobal": true,
   "devDependencies": {
     "yeoman-test": "^1.7.0",
     "yeoman-assert": "^3.1.0",
@@ -80,6 +81,6 @@
       "prettier"
     ]
   },
-  "repository": "git@github.com:valleweb/generator-polymer-init-valle-element-js.git",
+  "repository": "git@github.com:valleweb/valle-element-js.git",
   "license": "MIT"
 }

@@ -8,18 +8,37 @@ module.exports = class extends Generator {
     // Have Yeoman greet the user.
     this.log(
       yosay(
-        `Welcome to the first-rate ${chalk.red(
+        `Welcome to the the ${chalk.red(
           'generator-polymer-init-valle-element-js'
         )} generator!`
       )
     );
 
+    // Questions
     const prompts = [
       {
-        type: 'confirm',
-        name: 'someAnswer',
-        message: 'Would you like to enable this option?',
-        default: true
+        type: 'input',
+        name: 'elementName',
+        message: 'What is the name of the element?',
+        default: 'valle-element'
+      },
+      {
+        type: 'input',
+        name: 'elementDesc',
+        message: 'What is the description of the element?',
+        default: 'Awesome valle element - Web Component using Polymer 3x'
+      },
+      {
+        type: 'input',
+        name: 'elementGithubRepo',
+        message: 'What is the name of the element repository?',
+        default: 'valle-element'
+      },
+      {
+        type: 'input',
+        name: 'githubAccount',
+        message: 'What is your github username/organization?',
+        default: 'valleweb'
       }
     ];
 
@@ -30,9 +49,49 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    const elementName = this.props.elementName;
+
+    this.fs.copyTpl(
+      this.templatePath('demo/index.html'),
+      this.destinationPath('demo/index.html'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('_element.js'),
+      this.destinationPath(`${elementName}.js`),
+      this.props
+    );
+
+    this.fs.copy(this.templatePath('_gitignore'), this.destinationPath('.gitignore'));
+
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.templatePath('CONTRIBUTING.md'),
+      this.destinationPath('CONTRIBUTING.md')
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('index.html'),
+      this.destinationPath('index.html'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('LICENSE.md'),
+      this.destinationPath('LICENSE.md'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('package.json'),
+      this.destinationPath('package.json'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
+      this.props
     );
   }
 

@@ -1,0 +1,34 @@
+﻿{
+  "name": "@valle/<%= elementName %>",
+  "description": "<%= elementDesc %>",
+  "version": "0.1.0",
+  "authors": [
+    "<%= githubAccount %>"
+  ],
+  "main": "<%= elementName %>.js",
+  "homepage": "https://github.com/<%= githubAccount %>/<%= elementGithubRepo %>",
+  "bugs": {
+    "url": "https://github.com/<%= githubAccount %>/<%= elementGithubRepo %>/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= githubAccount %>/<%= elementGithubRepo %>"
+  },
+  "keywords": [
+    "polymer",
+    "polymer-3",
+    "web-components",
+    "<%= elementName %>"
+  ],
+  "license": "MIT",
+  "demos": {
+    "demo": "demo/index.html"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.12",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
+  }
+}

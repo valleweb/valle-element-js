@@ -1,4 +1,4 @@
-# generator-polymer-init-valle-element-js
+# valle-element-js
 
 > A generator for valle-elements - web components with Polymer 3
 
@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-- [generator-polymer-init-valle-element-js](#generator-polymer-init-valle-element-js)
+- [valle-element-js](#valle-element-js)
   - [Table of contents](#table-of-contents)
   - [How to install and use](#how-to-install-and-use)
   - [The generated element](#the-generated-element)
@@ -18,7 +18,6 @@
   - [Development](#development)
       - [Run the project locally](#run-the-project-locally)
       - [Code Style](#code-style)
-      - [Tests](#tests)
   - [Versioning](#versioning)
   - [Contributing](#contributing)
   - [History](#history)
@@ -28,22 +27,22 @@
 
 Verify if you have [node](http://nodejs.org/) and [yarn](https://yarnpkg.com/en/) installed.
 
-1 - Install [Polymer CLI](https://www.polymer-project.org/3.0/docs/tools/polymer-cli):
+1 - Install [Yeoman](http://yeoman.io/):
 
 ```sh
-$ yarn global add polymer-cli
+$ yarn global add yo
 ```
 
 2 - Install the valle-element-js generator:
 
 ```sh
-$ yarn global add generator-polymer-init-valle-element-js
+$ yarn global add @valle/valle-element-js
 ```
 
 3 - Then generate your new element:
 
 ```sh
-$ polymer init
+$ yo @valle/valle-element-js
 ```
 
 ## The generated element
@@ -52,9 +51,6 @@ $ polymer init
 
 - Polymer **3.x**
 - **Yarn** for dependencies
-- Unit tests with **Web Component Tester**
-- Lint with **ESlint**
-- CI with **travis**
 - Provide **UI docs**
 - **Docs** for all
 - Styling API with **custom properties**
@@ -68,17 +64,9 @@ $ polymer init
 	├── LICENSE.md
 	├── demo/
 	|   └── index.html
-	├── test/
-	|   ├── you-element_test.html
-	|   └── index.html
-	├── .editorconfig
-	├── .eslintrc.json
 	├── .gitignore
-	├── .travis.yml
-	├── wct.conf.json
 	├── you-element.js
 	├── index.html
-	├── index.js
 	└── package.json
 
 #### UI Docs:
@@ -92,14 +80,14 @@ Provide by [iron-demo-helpers](https://github.com/PolymerElements/iron-demo-help
 1 - Prepare the environment:
 
 ```sh
-$ yarn global add polymer-cli
+$ yarn global add yo
 ```
 
 2 - Clone the project and install the dependencies:
 
 ```sh
-$ git clone https://github.com/valleweb/generator-polymer-init-valle-element-js.git
-$ cd generator-polymer-init-valle-element-js
+$ git clone https://github.com/valleweb/valle-element-js.git
+$ cd valle-element-js
 $ yarn
 ```
 
@@ -112,20 +100,13 @@ $ npm link
 4 - Run the generator:
 
 ```sh
-$ polymer init
+$ yo
 ```
 
 #### Code Style
 
 Follow the [Valle style guide](https://github.com/valleweb/valle-style-guide).
 
-#### Tests
-
-*Run the unit tests with [mocha](https://mochajs.org/) and Validate the code style with [ESLint](http://eslint.org/):*
-
-```sh
-$ yarn run test
-```
 
 ## Versioning
 
@@ -133,21 +114,21 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 ## Contributing
 
-Find on our [issues](https://github.com/valleweb/generator-polymer-init-valle-element-js/issues/) the next steps of the project ;)
+Find on our [issues](https://github.com/valleweb/valle-element-js/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://github.com/valleweb/generator-polymer-init-valle-element-js/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/valleweb/valle-element-js/blob/master/CONTRIBUTING.md).
 
 ## History
 
-See [Releases](https://github.com/valleweb/generator-polymer-init-valle-element-js/releases) for detailed changelog.
+See [Releases](https://github.com/valleweb/valle-element-js/releases) for detailed changelog.
 
 ## License
 
 MIT © [valleweb](https://github.com/valleweb/)
 
-[npm-image]: https://badge.fury.io/js/generator-polymer-init-valle-element-js.svg
-[npm-url]: https://npmjs.org/package/generator-polymer-init-valle-element-js
-[travis-image]: https://travis-ci.org/LarissaAbreu/generator-polymer-init-valle-element-js.svg?branch=master
-[travis-url]: https://travis-ci.org/LarissaAbreu/generator-polymer-init-valle-element-js
-[daviddm-image]: https://david-dm.org/LarissaAbreu/generator-polymer-init-valle-element-js.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/LarissaAbreu/generator-polymer-init-valle-element-js
+[npm-image]: https://badge.fury.io/js/valle-element-js.svg
+[npm-url]: https://npmjs.org/package/valle-element-js
+[travis-image]: https://travis-ci.org/LarissaAbreu/valle-element-js.svg?branch=master
+[travis-url]: https://travis-ci.org/LarissaAbreu/valle-element-js
+[daviddm-image]: https://david-dm.org/LarissaAbreu/valle-element-js.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/LarissaAbreu/valle-element-js

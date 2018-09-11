@@ -35,7 +35,7 @@ $ yarn global add yo
 2 - Install the valle-element-js generator:
 
 ```sh
-$ yarn global add @valle/valle-element-js
+$ yarn global add @valle/generator-valle-element-js
 ```
 
 3 - Then generate your new element:

@@ -1,5 +1,5 @@
 {
-  "name": "@valle/valle-element-js",
+  "name": "@valle/generator-valle-element-js",
   "version": "0.1.0",
   "description": "A generator for valle-elements - web components with Polymer 3",
   "homepage": "https://github.com/valleweb/valle-element-js",

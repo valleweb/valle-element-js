@@ -3,7 +3,6 @@
 > A generator for valle-elements - web components with Polymer 3
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 
 ## Table of contents

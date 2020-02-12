@@ -1,12 +1,12 @@
-﻿import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
+﻿import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 
 class valleElement extends PolymerElement {
   static get template() {
     return html`
     <style>
       :host {
-				color: var(--<%= elementName %>-color, #000);
-			}
+				display: block;
+			};
     </style>
 
     <h1>Hello [[prop1]]</h1>
@@ -17,7 +17,7 @@ class valleElement extends PolymerElement {
 		return {
 			prop1: {
         type: String,
-        value: 'World'
+        value: '<%= elementName %>'
       }
 		}
 	}

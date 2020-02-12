@@ -16,13 +16,13 @@ $ yarn add @valle/<%= elementName %>
 2 -  Import the element:
 
 ```html
-<script type="module" src="node_modules/@<%= elementName %>/<%= elementName %>/<%= elementName %>.js"></script>
+<script type="module" src="node_modules/@valle/<%= elementName %>/<%= elementName %>.js"></script>
 ```
 
 or in your javascript file
 
 ```js
-import "<%= elementName %>/<%= elementName %>.js";
+import "@valle/<%= elementName %>/<%= elementName %>.js";
 ```
 
 3 - Start using it!
@@ -77,16 +77,14 @@ $ [sudo] yarn global add polymer-cli
 3 - Install local dependencies:
 
 ```sh
-$ yarn install
+$ yarn
 ```
 
 4 - Start the development server:
 
 ```sh
-$ polymer serve
+$ yarn start
 ```
-
-Go to [localhost:8080/components/<%= elementName %>/](http://localhost:8080/components/<%= elementName %>/)
 
 ## Versioning
 

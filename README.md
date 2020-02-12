@@ -63,8 +63,11 @@ $ yo @valle/valle-element-js
 	├── LICENSE.md
 	├── demo/
 	|   └── index.html
+	├── test/
+	|   ├── index.html
+	|   └── your-element_test.html
 	├── .gitignore
-	├── you-element.js
+	├── your-element.js
 	├── index.html
 	└── package.json
 

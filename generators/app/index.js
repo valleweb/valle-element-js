@@ -26,7 +26,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'elementDesc',
         message: 'What is the description of the element?',
-        default: 'Awesome valle element - Web Component using Polymer 3x'
+        default: 'Awesome valle-element - Web Component using Polymer 3x'
       },
       {
         type: 'input',
@@ -54,6 +54,18 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('demo/index.html'),
       this.destinationPath('demo/index.html'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('test/index.html'),
+      this.destinationPath('test/index.html'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('test/_element_test.html'),
+      this.destinationPath(`test/${elementName}_test.html`),
       this.props
     );
 

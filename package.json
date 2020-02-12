@@ -44,7 +44,6 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublishOnly": "nsp check",
     "pretest": "eslint .",
     "test": "jest"
   },

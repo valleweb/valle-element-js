@@ -58,6 +58,12 @@ module.exports = class extends Generator {
     );
 
     this.fs.copyTpl(
+      this.templatePath('_github/settings.yml'),
+      this.destinationPath('.github/settings.yml'),
+      this.props
+    );
+
+    this.fs.copyTpl(
       this.templatePath('test/index.html'),
       this.destinationPath('test/index.html'),
       this.props
@@ -108,6 +114,10 @@ module.exports = class extends Generator {
   }
 
   install() {
-    this.installDependencies();
+    this.installDependencies({
+      npm: false,
+      bower: false,
+      yarn: true
+    });
   }
 };

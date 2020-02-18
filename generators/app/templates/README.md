@@ -68,7 +68,7 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11+ | Latest ✔
 
 1 - Verify if you have [node](http://nodejs.org/) and [yarn](http://yarn.io/) installed.
 
-2 - Install [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
+2 - Install [Polymer-CLI](https://www.polymer-project.org/3.0/docs/tools/polymer-cli):
 
 ```sh
 $ [sudo] yarn global add polymer-cli
